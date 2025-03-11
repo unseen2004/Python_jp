@@ -53,12 +53,11 @@ def main(args=None):
             run_file(parsed_args.file)
             print("Debug: Run completed")
             return 0
-        elif parsed_args.command == "translate":
+        if parsed_args.command == "translate":
             translate_command(parsed_args.file, parsed_args.output)
             return 0
-        else:
-            parser.print_help()
-            return 0
+        parser.print_help()
+        return 0
 
     except Exception as e:
         import traceback
