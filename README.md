@@ -76,7 +76,7 @@ python setup.py install
 
 Alternatively, if using pip:
 ```bash
-pip install .
+pip install python-jp
 ```
 
 ### Using the Executable
@@ -89,7 +89,7 @@ The `bin/python_jp` script provides a command-line interface for running `.jppy`
 ### Command Line Interface
 After installation, you can run your custom `.jppy` files using the CLI tool. For example:
 ```bash
-python_jp examples/hello_world.jppy
+python_jp run examples/hello_world.jppy
 ```
 
 ### Examples
